@@ -1,16 +1,64 @@
-# React + Vite
+🎨 Color Palette Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive Color Palette Generator built with React and CSS. It generates six random colors, displays their HEX codes, and lets users copy a color code by clicking on the color card.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🎲 Generate six random colors
+- 🔄 Generate a new palette with the Random button
+- 🎨 Display HEX color codes
+- 📋 Click a color card to copy its HEX code
+- 📱 Responsive design for desktop and mobile
 
-## React Compiler
+🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
 
-## Expanding the ESLint configuration
+📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Generate a new palette by clicking the Random button. Click any color card to copy its HEX code to your clipboard.
+
+⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/tubhyam14/colorPalette.git
+
+Go to the project directory:
+
+cd colorPalette
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+🌐 Live Demo
+
+https://tubhyam14.github.io/colorPalette/
+
+📂 Project Structure
+
+colorPalette/
+│── src/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│── public/
+│── package.json
+│── vite.config.js
+│── README.md
+
+📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+Made with ❤️ using React.

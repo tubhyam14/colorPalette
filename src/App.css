@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 body {
-  font-family:Arial, sans-serif;
-  text-align:center;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .palette {
@@ -19,7 +23,7 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.03) rotate(1deg);
   transition: 0.5s;
 }
 
@@ -28,8 +32,14 @@ body {
   height:120px;
 }
 .button {
-  display: block;
+  display:block;
   margin: 20px auto;
-  padding: 10px 10px;
-  cursor: pointer;
+  font-size:16px;
+  padding:10px 10px;
+  cursor:pointer;
+  border:none;
+  border-radius:6px;
+}
+.button:hover {
+  transform:scale(1.05);
 }
