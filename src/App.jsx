@@ -30,11 +30,14 @@ function App() {
   }, []);
   return (
   
-  <>
+  <div className="app">
     <h1>Color Palette Generator</h1>
+    <p>
+      Create beautiful random color palettes.
+      Click any color to copy its HEX code.
+    </p>
     
     <button className="button" onClick={generatePalette}>Random</button>
-    
     <div className="palette">
     {colors.map((color, index) => (
     <div className="card" key={index} onClick={() => copyColor(color)}>
@@ -48,7 +51,7 @@ function App() {
      </div>
     
     
-   </>
+   </div>
   );
 }
 

@@ -1,45 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
-  text-align: center;
-  background-color: black;
+  background: linear-gradient(135deg, #000000, #111216,#111827);
   color: white;
+  text-align: center;
+}
+
+.app {
+  width: min(1600px, 95%);
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 12px;
+  
+}
+
+ p {
+   margin-top:32px;
+   margin-bottom:25px;
+   font-size:1.2rem;
 }
 
 .palette {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1500px;
+  margin-top: 60px ;
+  padding: 0 20px;
 }
 
 .card {
-  width:150px;
-  border:1px solid #ccc;
-  padding:10px;
-  cursor:pointer;
-  box-shadow:1.5px 2px 5px white;
+  background: #1b1b1b;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,.08);
+  overflow: hidden;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,.3);
 }
-
 .card:hover {
-  transform: scale(1.03) rotate(1deg);
-  transition: 0.5s;
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(0,0,0,.45);
 }
 
 .colorBox {
-  width:100%;
-  height:120px;
+  width: 100%;
+  height: 260px;
 }
 .button {
-  display:block;
-  margin: 20px auto;
-  font-size:16px;
-  padding:10px 10px;
-  cursor:pointer;
-  border:none;
-  border-radius:6px;
+  background: linear-gradient(135deg, #8b5cf6, #6366f1, #06b6d4);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.35);
 }
+
 .button:hover {
-  transform:scale(1.05);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(99, 102, 241, 0.5);
 }
